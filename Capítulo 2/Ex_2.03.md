@@ -24,3 +24,15 @@ Resposta 2:
 ```
 Quando o "e-greedy" é médio o algoritmo pode escolher uma maquina muito ruim e por azar a recompensa dela for muito alta, dessa forma iria demorar mais para o algoritmo perceber que aquela maquina é de fato ruim. Com "e-greedy" é muito pequeno acontece algo pior pois com o raciocinio de sempre escolher a melhor ação o algoritmo pode achar uma maquina que lhe dar 3 como recompensa enquanto que a maioria das outras lhe dão -1. Porem pode existir uma maquina que lhe der 10 como média. A grande questão é escolher o valor certo da explotação/exploração
 ```
+
+---
+Resposta 3:
+
+```
+O método e = 0,1 explorou mais e usualmente encontrou a ação ideal mais cedo, mas nunca selecionou essa ação mais de 91% das vezes. O método e = 0,01 melhorou mais lentamente, mas eventualmente teria um desempenho melhor do que o método e = 0,1 em ambas as medidas de desempenho mostradas na figura.
+
+Simulando quantitativamente o q*(a), ou seja, a recompensa ótima para cada ação, temos:
+
+    Para ε = 0.01 --> 0.99 * 1.5 = 1.485
+    Para ε = 0.1 --> 0.9 * 1.5 = 1.35
+```

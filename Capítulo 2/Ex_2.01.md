@@ -27,3 +27,9 @@ Justificativa: Existe duas formas da melhor ação ser escolhida:
 Somando as duas probabilidades temos 0,75 como sendo a probabilidade da melhor ação ser escolhida.
 ```
 
+Resposta 3:
+
+```
+Ação gananciosa selecionada com p = 0,5.
+
+```

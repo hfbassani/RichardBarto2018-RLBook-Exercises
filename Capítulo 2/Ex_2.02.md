@@ -58,3 +58,26 @@ No quarto passo é usado uma ação 'e' pois  a melhor ação poderia ser 3 ou 4
 Valoração dos estados S1 = -1, S2 = 1/3, S3 = 0, S4 = 0 ----> Ação tomada = 3
 No quinto passo é usado uma ação 'e' pois  a melhor ação é 2
 ```
+
+---
+Resposta 4:
+
+```
+A partir do enunciado pode-se notar que existem 4 estados possíveis, sendo assim tem-se que: 
+
+A1 = 1, R1 = 1
+A2 = 2, R2 = 1
+A3 = 2, R3 = 2
+A4 = 2, R4 = 2
+A5 = 3, R5 = 0
+
+Timestep    Q1  Q2  Q3  Q4  Ação Gananciosa (Greedy)  Ação Selecionada  Observação
+    0       0   0   0   0   -                           A = 1           Tomada de decisão aléatoria
+    1       1   0   0   0   A = 1                       A = 2           Não é uma Ação Gananciosa, ação de exploração e 
+    2       1   1   0   0   A = 1 / A = 2               A = 2           Ação pode ter sido realizada por 1-e ou e
+    3       1   1.5 0   0   A = 2                       A = 2           Ação Gananciosa dada por 1-e                  
+    4       1   1.6 0   0   A = 2                       A = 3           Não é uma Ação Gananciosa, ação de exploração dada por e
+
+Onde Qn+1(a) = (1/n)*somatorio(Ri) para i=1 até n
+
+```
