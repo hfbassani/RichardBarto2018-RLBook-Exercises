@@ -55,3 +55,12 @@ A melhoria abaixo segue a mesma ideia de ter as etapas de Policy Evaluation e Po
             Δ <- max(Δ, |old-state-value(s) - V(s)|)
     until Δ < θ (a small number determining the accuracy of estimation)
 ```
+
+
+---
+Resposta 3:
+
+```
+Ao realizar o argmax durante a etapa de melhoria de política do algoritmo, é possível continuar alternando indefinidamente entre duas ações ótimas. No momento, um empate é resolvido selecionando aleatoriamente entre as ações que maximizam o valor. Em vez disso, poderia ser sempre selecionada a primeira ação resultante do argmax, garantindo assim que a mesma ação ótima seja escolhida durante a iteração, definindo o booleano estável-política como verdadeiro e garantindo a convergência.
+
+```
